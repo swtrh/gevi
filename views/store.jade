@@ -3,6 +3,6 @@ extends layout
 block content
   h1= title
   p Dette er den nye jade-filen, welcome to store #{title} 
-  form(action='#{messageURL}', method='post')
-  input(type="text",name="message",placeholder="Enter a message",size="40")
-  input(type='submit',name='submit',value='Submit')
+  form(action='#{messageURL}/store/message', method='post')
+      input(type="text",name="message",placeholder="Enter a message",size="40")
+      input(type='submit',name='submit',value='Submit')
